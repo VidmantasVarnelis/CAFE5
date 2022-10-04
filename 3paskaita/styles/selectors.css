@@ -1,0 +1,71 @@
+/* Globalus kintamieji */
+:root{
+  --main-black: #333333;
+  --main-font-size: 18px;
+}
+
+*{
+ font-family: sans-serif; 
+}
+
+/* CSS Selektoriai */
+/* Paims visus elementus pagal tag*/
+div {
+  background-color: royalblue;
+}
+/* p{} */
+/* Imame elementa pagal klase */
+.second_div{
+  font-size: 16px;
+}
+
+/* Imame elementa pagal id */
+#first_div {
+  font-size: 24px;
+}
+
+/* CSS Grupavimas */
+h1,h2,h3,p{
+  /* color: white */
+  /* color: rgb(97, 74, 74); */
+  /* color: rgba(224, 19, 19, 1); */
+  /* dazniausiai naudojami */
+  /* color: #7a7a7a;  */
+  /* color: hsl(60,20%,50%); */
+
+  /* variable */
+  /* color: var(--main-black); */
+  --secondary-black: #555555;
+  /* color: var(--secondary-black) */
+
+}
+.paragraph, .bold, #id {}
+
+.paragraph {
+  color: red;
+  font-size: 24px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+/* ========================================== */
+/* Imame elementa vienu lygiu zemyn */
+/* ========================================== */
+.second_div ul li .anchor{
+  color: white;
+}
+
+
+/* ========================================== */
+/* Imame elementa pagal atributa */
+/* ========================================== */
+
+input[type="text"] {
+  width: 300px;
+  height: 50px;
+}
+a[href="https://google.com"]{
+  font-size: 40px;
+}
