@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600&display=swap');
-*{
+* {
   font-family: 'Nunito', sans-serif;
 }
 
@@ -10,7 +10,7 @@ h1 {
   font-weight: 600;
   text-transform: capitalize;
 }
-p{
+p {
   text-align: center;
   letter-spacing: 2px;
   /* line-height: 50px; */
@@ -19,13 +19,13 @@ p{
   width: 500px;
   overflow: hidden; */
 }
-div{
+div {
   text-align: center;
 }
 
-button{
+button {
   /* inline ir inline-block */
-  vertical-align: baseline; 
+  vertical-align: baseline;
 
   padding: 10px;
   /*        top  right  bottom left*/
@@ -35,14 +35,14 @@ button{
   /*        y axis x axis */
   padding: 10px 10px;
 
-    /*   top axis x axis bottom axis */
-    padding: 10px 10px 50px;
+  /*   top axis x axis bottom axis */
+  padding: 10px 10px 50px;
 }
-a{
-  vertical-align: top; 
+a {
+  vertical-align: top;
   text-decoration: none;
 }
-img{
+img {
 }
 /* .test_img{
   display: block;

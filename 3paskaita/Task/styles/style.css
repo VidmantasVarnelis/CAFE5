@@ -1,0 +1,97 @@
+:root {
+  --background-green: seagreen;
+  --background-white: white;
+  --background-gray: lightgrey;
+  --core-blue: royalblue;
+  --core-brown: brown;
+  --core-green: forestgreen;
+}
+
+* {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--background-green);
+}
+
+.card {
+  max-width: 400px;
+  background-color: var(--background-white);
+  padding: 32px 32px 48px;
+  border-radius: 16px;
+  margin: 10px;
+}
+
+.card h1 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.card > p {
+  font-style: italic;
+  color: #7e7e7e;
+  margin-bottom: 12px;
+}
+
+.card .input-group {
+  margin-bottom: 32px;
+}
+
+.card .input-group input {
+  border: 1px solid var(--background-gray);
+  padding: 4px;
+}
+
+.card ol {
+  margin-left: 24px;
+  list-style: none;
+}
+
+.card ol li {
+  margin: 8px 0;
+}
+
+.line-through {
+  text-decoration: line-through;
+  list-style: none;
+  background-color: var(--background-gray);
+}
+
+.line-through span {
+  display: inline-block;
+  /* text-decoration: line-through; */
+  text-decoration: inherit;
+  background-color: var(--background-white);
+}
+
+.btn-group {
+  margin-top: 32px;
+}
+.btn-group button:not(:last-child) {
+  margin-right: 4px;
+}
+
+/* Utilities */
+
+.btn {
+  padding: 6px 24px;
+  border: none;
+  border-radius: 75px;
+  color: var(--background-white);
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: var(--core-blue);
+}
+
+.btn-brown {
+  background-color: var(--core-brown);
+}
+
+.btn-green {
+  background-color: var(--core-green);
+}
