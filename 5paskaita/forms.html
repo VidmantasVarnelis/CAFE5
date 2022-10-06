@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <!-- action - kur duomenys bus siunciami -->
+    <!-- method - kokiu metodu siusime duomenis -->
+    <!-- no validate - formoje nevaliduosim jokiu ivestu duomenu -->
+    <form action="./results.html" method="get" novalidate>
+      <h1>Tai yra mano forma</h1>
+      <input type="text" placeholder="Enter your name" />
+      <input type="email" placeholder="Enter your email" />
+      <button>Submit</button>
+    </form>
+
+    <form action="./results.html" style="margin-top: 50px">
+      <h1>Antra forma:</h1>
+      <!-- Text input -->
+      <div>
+        <label for="name">Iveskite varda:</label>
+        <input type="text" name="name" id="name" required />
+      </div>
+      <!-- Email input -->
+      <div>
+        <label for="email">Iveskite email:</label>
+        <input type="email" name="email" id="email" required />
+      </div>
+      <!-- Date input -->
+      <div>
+        <label for="data">Data:</label>
+        <input
+          type="date"
+          name="date"
+          id="date"
+          required
+          max="2021-01-01"
+          min="2019-01-01"
+        />
+      </div>
+      <!-- Password input -->
+      <div>
+        <label for="password">Iveskite password:</label>
+        <input type="password" name="password" id="password" required />
+      </div>
+      <!-- Checkbox -->
+      <div>
+        <label for="box">Testuoju</label>
+        <input type="checkbox" name="box" id="box" checked />
+        <label for="box2">Testuoju2</label>
+        <input type="checkbox" name="box" id="box2" checked />
+        <label for="box3">Testuoju3</label>
+        <input type="checkbox" name="box" id="box3" checked />
+      </div>
+      <!-- Radio buttons -->
+      <div>
+        <label for="gender">Pasirinkite lyti:</label>
+        <input type="radio" name="gender" id="male" />
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female" />
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female2" />
+        <label for="female2">Female2</label>
+        <br />
+        <label for="make">Pasirinkite masinos marke:</label>
+        <input type="radio" name="make" id="bmw" />
+        <label for="bmw">bmw</label>
+        <input type="radio" name="make" id="audi" />
+        <label for="audi">audi</label>
+        <input type="radio" name="make" id="mercedes" />
+        <label for="mercedes">mercedes</label>
+      </div>
+      <!-- Radio input type -->
+      <div>
+        <label for="number">Pasirinkite skaiciu</label>
+        <input
+          type="number"
+          name="number"
+          id="number"
+          min="5"
+          max="20"
+          step="3"
+        />
+      </div>
+      <!-- Tel input type -->
+      <div>
+        <label for="tel">Iveskite tel numeri</label>
+        <input
+          type="tel"
+          name="tel"
+          id="tel"
+          pattern="[0-9]{8}"
+          placeholder="Iveskite 86..."
+          required
+        />
+      </div>
+      <!-- File input type -->
+      <div>
+        <label for="file">Pasirinkite failas</label>
+        <input type="file" name="file" id="file" disabled />
+      </div>
+      <!-- Color input type -->
+      <div>
+        <label for="color">Pasirinkite spalva</label>
+        <input type="color" name="color" id="color" />
+      </div>
+      <!-- Dropdown -->
+      <div>
+        <label for="make">Select Make</label>
+        <select name="make" id="make">
+          <option value="bmw">Bmw</option>
+          <option value="audi">audi</option>
+          <option value="mercedes">mercedes</option>
+          <option value="toyota">toyota</option>
+        </select>
+        <select name="make" id="make" multiple>
+          <option value="bmw">Bmw</option>
+          <option value="audi">audi</option>
+          <option value="mercedes">mercedes</option>
+          <option value="toyota">toyota</option>
+        </select>
+      </div>
+      <!-- textarea -->
+      <div>
+        <label for="textarea">Iveskite aprasyma:</label>
+        <div>
+          <textarea
+            name="textarea"
+            id="textarea"
+            cols="30"
+            rows="10"
+            maxlength="100"
+          ></textarea>
+        </div>
+      </div>
+      <!-- range input -->
+      <div>
+        <label for="range">Iveskite range:</label>
+        <input type="range" name="range" id="range" min="50" />
+      </div>
+      <!-- By default btn type = submit -->
+      <button>Submit Form</button>
+      <button type="reset" disabled>Reset</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/task.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="../results.html">
+      <div class="input-group">
+        <input
+          type="text"
+          name="name"
+          placeholder="Vardas"
+          required
+          value="Vidmantas"
+        />
+        <input type="text" name="lastname" placeholder="Pavarde" required />
+        <input
+          type="text"
+          name="tel-or-email"
+          placeholder="Mobiliojo telefono numer arba el.pasto adresas"
+          required
+        />
+        <input
+          type="password"
+          name="password"
+          placeholder="Naujas slaptazodis"
+          required
+        />
+      </div>
+      <label>Gimimo data</label>
+      <i
+        class="fa-regular fa-circle-question"
+        title="Pasirinkite gimimo data"
+      ></i>
+      <div>
+        <select name="year">
+          <option value="2022">2022</option>
+          <option value="2021">2021</option>
+          <option value="2020">2020</option>
+        </select>
+        <select name="month">
+          <option value="sausis">Sausis</option>
+          <option value="vasaris">Vasaris</option>
+          <option value="kovas">Kovas</option>
+        </select>
+        <select name="day">
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+        </select>
+      </div>
+      <label for="gender">Lytis</label>
+      <i class="fa-regular fa-circle-question" title="Pasirinkite lyti"></i>
+      <div class="radio-group">
+        <label for="vyras"
+          >Vyras
+          <input type="radio" name="gender" id="vyras" value="vyras" />
+        </label>
+        <label for="moteris"
+          >Moteris
+          <input type="radio" name="gender" id="moteris" value="moteris" />
+        </label>
+        <label for="tinkinta"
+          >Tinkinta
+          <input type="radio" name="gender" id="tinkinta" value="tinkinta" />
+        </label>
+      </div>
+      <button>Submit form</button>
+    </form>
+  </body>
+</html>
