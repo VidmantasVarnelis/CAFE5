@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: lightgrey;
+  height: 100vh;
+}
+
+.box {
+  background-color: cornflowerblue;
+  height: 10rem;
+  width: 10rem;
+  /* margin: 10rem; */
+  /* transition: transform 400ms; */
+  /* transition: all 400ms; */
+  /* transition: all 400ms cubic-bezier(0, -0.5, 0, 1.43) 1s; */
+  transition: all 400ms cubic-bezier(0, -0.5, 0, 1.43);
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+  /* animation: first_animation 800ms both infinite alternate linear; */
+  opacity: 0;
+  animation: first_animation 2s forwards alternate linear;
+}
+/* transitions */
+/* transform: rotateX(45deg); */
+/* transform: scale(1.5); */
+/* transform: translateX(50px); */
+/* body:hover .box {
+  transform: rotate(125deg);
+
+  background-color: coral;
+} */
+/* @keyframes first_animation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(125deg);
+  }
+} */
+@keyframes first_animation {
+  0% {
+    /* transform: rotate(0deg); */
+    /* transform: translateX(0px);
+    transform: translateY(0px); */
+    /* opacity: 0; */
+  }
+  66% {
+    /* transform: rotate(125deg); */
+  }
+  100% {
+    transform: translateX(400px);
+    opacity: 1;
+  }
+}

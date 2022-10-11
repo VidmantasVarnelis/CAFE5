@@ -1,0 +1,44 @@
+* {
+  /* margin: 0;
+  padding: 0; */
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  background-color: coral;
+  padding: 30px;
+  border: 10px solid black;
+  margin: 30px;
+}
+
+.border-box {
+  width: 400px;
+
+  /* margin - padding */
+  /* po viena krastine */
+  margin-bottom: 50px;
+  margin-left: 50px;
+  /* nurodant virsu - (i kaire ir i desine) - apacia / shortcut*/
+  margin: 10px 30px 10px;
+
+  /* virsus desine apacia kaire */
+  margin: 10px 30px 10px 30px;
+
+  /* (virsus apacia) - (kaire desine) */
+  margin: 100px 100px;
+
+  /* visom krastinem */
+  margin: 30px;
+
+  /* box-sizing: border-box; */
+}
+
+.content-box {
+  width: 400px;
+  margin-top: 70px;
+}

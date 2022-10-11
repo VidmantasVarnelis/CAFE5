@@ -1,0 +1,29 @@
+/* busenos - pseudo klases */
+
+/* A tag specific */
+a:visited {
+  color: coral;
+}
+
+a:link {
+  background-color: cadetblue;
+}
+
+/* ============================ */
+
+/* button:hover {
+  background-color: crimson;
+}
+
+button:active {
+  color: white;
+}
+
+button:focus {
+  padding: 10px;
+} */
+
+/* button:hover,
+button:focus {
+  padding: 10px;
+} */
