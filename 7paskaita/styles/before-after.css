@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+/* :after :before */
+
+h1 {
+  position: relative;
+}
+
+h1::before {
+  content: '';
+  width: 5rem;
+  height: 0.25rem;
+  position: absolute;
+  bottom: 0;
+  background-color: red;
+}
+h1::after {
+  /* content yra butinas */
+  content: '';
+  width: 5rem;
+  height: 0.25rem;
+  position: absolute;
+  bottom: 0;
+  background-color: red;
+}

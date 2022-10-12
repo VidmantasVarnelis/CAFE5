@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: darkgrey;
+  height: 200vh;
+}
+
+.parent {
+  background-color: cadetblue;
+  margin: 10rem;
+  /* height: 10rem; */
+  padding: 10rem;
+  font-size: 2rem;
+  position: relative;
+  text-align: center;
+}
+.child__one {
+  /* Relative poz: Leidzia naudoti top right left bottom savybes.
+		veikia labai panasiai kaip static poz.
+	*/
+  /* position: relative;
+  left: 5rem;
+  top: 2rem; */
+  /* position: absolute; */
+  /* left: 12rem; */
+  background-color: coral;
+  height: 3rem;
+  z-index: 1;
+}
+.child__two {
+  /* Absolute poz: Leidzia naudoti top right left bottom savybes */
+  position: absolute;
+  /* top: 2rem; */
+  /* bottom: 4rem; */
+  /* top: 50%; */
+  left: 50%;
+  /* transform: translateX(-50%) - naudosim kai noresim poziciuonuoti centre */
+  transform: translateX(-50%) translateY(-50%);
+
+  top: 50%;
+
+  background-color: darkmagenta;
+  height: 3rem;
+  width: 75%;
+  z-index: 2;
+}
+
+.child__three {
+  /* Fixed poz: Leidzia naudoti top right left bottom savybes */
+  /* neiesko relatyvios pozicijos visada ziures i narsykles langa */
+  background-color: black;
+  color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.sticky {
+  /* Sticky poz: Leidzia naudoti top right left bottom savybes */
+  position: sticky;
+  background-color: tomato;
+  height: 3rem;
+  top: 10rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20rem;
+}
