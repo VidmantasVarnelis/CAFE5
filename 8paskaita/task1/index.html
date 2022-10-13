@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/task1.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section id="card">
+      <h1>Login</h1>
+      <form>
+        <div class="input-container">
+          <label for="username">Username</label>
+          <div class="input-group">
+            <input
+              type="text"
+              name="username"
+              id="username"
+              placeholder="Type your username"
+              required
+            />
+            <i class="fa-regular fa-user"></i>
+            <div class="line"></div>
+          </div>
+          <p class="error-text">Please enter valid Username</p>
+        </div>
+        <div class="input-container">
+          <label for="password">Password</label>
+          <div class="input-group">
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Type your password"
+              required
+            />
+            <i class="fa-solid fa-lock"></i>
+            <div class="line"></div>
+          </div>
+          <p class="error-text">Please enter valid Password</p>
+
+          <div class="link-container">
+            <a href="http://google.com">Forgot password?</a>
+          </div>
+        </div>
+        <button>LOGIN</button>
+      </form>
+      <div class="social-media">
+        <span>Or Sign up using</span>
+        <ul>
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-square-twitter"> </i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="registration">
+        <p>Or Sign Up Using</p>
+        <a href="#">SIGN UP</a>
+      </div>
+    </section>
+  </body>
+</html>

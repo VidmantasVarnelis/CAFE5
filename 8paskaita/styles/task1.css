@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+:root {
+  --background-main: white;
+  --font-main: #333;
+  --font-gray: rgb(173, 173, 173);
+  --color-accent: #ce11e3;
+  --color-error: red;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  background: url('https://colorlib.com/etc/lf/Login_v4/images/bg-01.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  padding: 2rem;
+  max-width: 40rem;
+  margin: 0 auto;
+  background-position: center;
+}
+
+#card {
+  background-color: var(--background-main);
+  height: 100%;
+  border-radius: 0.75rem;
+  padding: 3rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+#card > h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--font-main);
+  margin-bottom: 2rem;
+}
+
+#card .input-group {
+  position: relative;
+}
+
+#card form label {
+  font-size: 0.875rem;
+}
+
+#card form .input-container {
+  margin-bottom: 2rem;
+}
+
+#card .input-group input {
+  display: block;
+  width: 100%;
+  padding: 1rem 1rem 1rem 2rem;
+  border: none;
+  font-size: 1rem;
+  border-bottom: 2px solid lightgrey;
+  color: var(--font-main);
+  height: 3rem;
+  font-weight: 500;
+}
+#card .input-group .line {
+  position: absolute;
+  bottom: 0;
+  height: 0.125rem;
+  width: 0;
+  background-color: var(--font-main);
+  transition: width 300ms linear;
+}
+
+#card .input-group input:focus ~ .line {
+  width: 100%;
+}
+
+#card form .input-group:nth-last-of-type(2) {
+  margin-bottom: 0.5rem;
+}
+
+#card .input-group input:focus {
+  outline: none;
+}
+
+#card .input-group input:focus + i {
+  color: var(--color-accent);
+}
+
+#card .input-group input::placeholder {
+  color: var(--font-gray);
+}
+
+#card .input-group i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1rem;
+  left: 0.5rem;
+  color: var(--font-gray);
+}
+
+#card form .link-container {
+  text-align: right;
+}
+#card form a {
+  text-decoration: none;
+  color: var(--font-main);
+  font-size: 0.875rem;
+  text-align: right;
+  transition: color 300ms linear;
+}
+
+#card form a:hover {
+  color: var(--color-accent);
+}
+
+#card form button {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 5rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1.25rem;
+  color: white;
+  background: -webkit-linear-gradient(left, #00dbde, #fc00ff);
+  background-repeat: repeat-x;
+  margin: 2rem 0 3rem;
+  transition: box-shadow 300ms linear;
+}
+#card form button:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+/* social - media */
+
+#card .social-media {
+  text-align: center;
+  color: var(--font-main);
+  font-size: 0.875rem;
+  margin-bottom: 8rem;
+}
+
+#card .social-media ul {
+  margin-top: 2rem;
+  list-style: none;
+}
+
+#card .social-media ul li {
+  display: inline-block;
+}
+
+#card .social-media ul li:not(:last-child) {
+  margin-right: 0.5rem;
+}
+
+#card .social-media ul li a {
+  color: royalblue;
+}
+
+#card .social-media ul li a i {
+  font-size: 3rem;
+  transition: transform 200ms linear;
+}
+
+#card .social-media ul li a i:hover {
+  transform: translateY(-0.5rem);
+}
+
+/* registration */
+
+#card .registration {
+  text-align: center;
+}
+
+#card .registration p {
+  color: var(--font-main);
+  margin-bottom: 0.5rem;
+}
+
+#card .registration a {
+  color: var(--font-main);
+  text-decoration: none;
+  font-size: 0.875rem;
+  transition: color 300ms linear;
+}
+#card .registration a:hover {
+  color: var(--color-accent);
+}
+
+/* error validation */
+
+.error-text {
+  display: none;
+}
+
+#card form .error .error-text {
+  color: var(--color-error);
+  display: block;
+}
+#card form .error label {
+  color: var(--color-error);
+}
+#card form .error .input-group i {
+  color: var(--color-error);
+}
+#card form .error .input-group input {
+  border-color: var(--color-error);
+}
+#card form .error .input-group:nth-last-of-type(2) {
+  margin-bottom: 0;
+}
