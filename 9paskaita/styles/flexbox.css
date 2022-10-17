@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.parent {
+  /* display: flex */
+  display: flex;
+  /* display: inline-flex; */
+
+  /* By default flex-direction - row */
+  /* kai display:flex - justify-content - etc. tai stumdys elementus po main axis  */
+  /* justify-content: flex-start; */
+  /* justify-content: center; */
+  /* justify-content: flex-end; */
+  /* justify-content: space-between; */
+  /* justify-content: space-around; */
+  /* justify-content: space-between; */
+
+  /* kai display:flex - align-items - etc. tai stumdys elementus po cross axis  */
+  /* by - default */
+  /* align-items: stretch; */
+  /* align-items: flex-start; */
+  /* align-items: center; */
+  /* align-items: flex-end; */
+  /* -------------------------------------------------- */
+
+  /* flex-direction: row; */
+  /* flex-direction: column; */
+  /* flex-direction: column-reverse; */
+  /* flex-direction: row-reverse; */
+  /* flex-direction: column; */
+  /* ----------------------------------------------- */
+  /* centruos horizontaliai */
+  /* align-items: stretch; */
+  /* align-items: center;
+  align-items: flex-start;
+  align-items: flex-end; */
+  /* centruos vertikaliai */
+  /* justify-content: center; */
+  /* justify-content: flex-start; */
+  /* justify-content: flex-end; */
+  /* justify-content: space-between; */
+  /* justify-content: space-evenly; */
+
+  /* =============================================================== */
+
+  /* flex-wrap: nowrap; */
+  /* flex-wrap: wrap; */
+  /* flex-wrap: wrap-reverse; */
+  /* flex-wrap: wrap; */
+
+  /* align-content - naudojamas kartu su flex-wrap:wrap - kai atsiranda keleta eiluciu */
+  /* align-content: stretch; */
+  /* align-content: flex-start; */
+  /* align-content: center; */
+  /* align-content: flex-end; */
+
+  /* =========================================================== */
+
+  gap: 2rem;
+
+  /* flex-flow: column wrap; */
+
+  font-size: 1.5rem;
+  background-color: royalblue;
+  height: 50rem;
+  position: relative;
+  /* overflow: hidden; */
+}
+
+.box {
+  /* --------------------------- */
+  /* flex-shrink - ar gali vaikas mazeti ar ne ( by default gali - 1 )  */
+  /* flex-shrink: 1; */
+  /* flex-shrink: 0; */
+  /* --------------------------- */
+  /* flex-grow - ar gali vaikas dideti ar ne ( by default - 0  )  */
+  /* flex-grow: 0; */
+  /* flex-grow: 1; */
+  /* --------------------------- */
+  /* Default */
+  /* flex-basis: auto; */
+  /* flex-basis: 0; */
+  /* flex-basis: 100px; */
+  /* flex-basis: 15%; */
+  /* flex-basis: 0; */
+  /* --------------------------- */
+  width: 20rem;
+  height: 7rem;
+  background-color: coral;
+  border: 0.25rem solid black;
+
+  /* shortcut */
+  /* flex: flex-grow flex-shrink flex-basis */
+  /* by default: flex: 0 1 auto */
+
+  /* flex: 1 1 auto; */
+  /* flex-grow: 1, flex-shrink: 1, flex-basis: 0 */
+  /* flex: 1; */
+  /* --------------------------- */
+  /* --------------------------- */
+}
+
+.child__one {
+  /* flex-shrink: 0; */
+  /* flex-shrink: 3; */
+  /* flex-grow: 1; */
+  /* flex: 0.2; */
+  /* align-self: flex-start; */
+  order: 3;
+}
+
+.child__two {
+  /* flex-grow: 1; */
+  /* flex-grow: 3; */
+  /* flex-grow: 1; */
+  /* flex: 0.8; */
+  /* align-self: center; */
+  order: 1;
+}
+
+.child__three {
+  /* flex-basis: 0; */
+  /* align-self: flex-end; */
+  /* order: 0; */
+  order: 2;
+}
+
+.main_axis {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: lightgreen;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.cross_axis {
+  position: absolute;
+  height: 100%;
+  width: 2px;
+  background-color: red;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
