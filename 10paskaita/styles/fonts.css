@@ -1,0 +1,42 @@
+/* 1 budas */
+/* =============================================================== */
+:root {
+  --font-size-xl: 4rem;
+  --font-size-500: 1rem;
+  --font-size-vw: 5vw;
+}
+
+@media all and (max-width: 768px) {
+  :root {
+    --font-size-xl: 2rem;
+    --font-size-500: 0.875rem;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* h1 {
+  font-size: var(--font-size-xl);
+}
+p {
+  font-size: var(--font-size-500);
+} */
+
+/* @media all and (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+} */
+/* =============================================================== */
+/* 2 budas */
+
+h1 {
+  /* font-size: calc(3vw + 1rem); */
+  font-size: clamp(2rem, 2vw + 1rem, 4rem);
+}
+/* p {
+  font-size: calc(var(--font-size-vw) - 2vw);
+} */

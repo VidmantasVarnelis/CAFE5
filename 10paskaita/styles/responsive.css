@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  /* background: url('https://picsum.photos/800'); */
+  /* background-repeat: no-repeat; */
+  /* background-size: contain; */
+  /* max-width: 100%; */
+  /* max-width: 100%; */
+  /* height: 600px; */
+  background-color: royalblue;
+  /* margin: 0 auto;
+  max-width: 1000px; */
+}
+div {
+  margin: 3rem 0;
+  background-color: white;
+  max-width: 60rem;
+  /* min-width: 100%; */
+  /* width: 600px; */
+  min-height: 10rem;
+  /* max-height: 100%; */
+}
+.box {
+  background-color: red;
+  width: 20%;
+}
+/* @media only screen and (min-width: 1028px) {
+  body {
+    background-color: teal;
+  }
+} */
+
+/* @media only screen and (max-width: 1028px) {
+  body {
+    background-color: teal;
+  }
+} */
+
+/* @media only print and (min-width: 1028px) {
+  body {
+    background-color: teal;
+  }
+} */
+/* @media only speech and (min-width: 1028px) {
+  body {
+    background-color: teal;
+  }
+} */
+
+/* all */
+/* @media (min-width: 1028px) {
+  body {
+    background-color: teal;
+  }
+} */
+
+/* @media all and (min-width: 1028px) {
+  body {
+    background-color: teal;
+  }
+} */
+
+/* landscape */
+/* @media (orientation: portrait) {
+  body {
+    background-color: coral;
+  }
+} */
+
+/* AND salyga */
+
+/* @media (min-width: 768px) and (min-height: 768px) {
+  body {
+    background-color: teal;
+  }
+} */
+
+/* OR salyga */
+/* @media (min-width: 768px), (min-height: 768px) {
+  body {
+    background-color: teal;
+  }
+} */
+/* body {
+  background-color: royalblue;
+} */

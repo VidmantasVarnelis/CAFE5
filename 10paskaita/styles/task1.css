@@ -1,0 +1,76 @@
+:root {
+  --margin-sm: 0.5rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 0 0.5rem;
+}
+#orange div {
+  min-height: 4rem;
+  background-color: coral;
+  margin-bottom: var(--margin-sm);
+}
+
+#green {
+  min-height: 20vw;
+  background-color: teal;
+  margin-bottom: var(--margin-sm);
+}
+
+#blue div {
+  min-height: 10rem;
+  background-color: royalblue;
+  margin-bottom: var(--margin-sm);
+}
+
+#gray div {
+  display: none;
+  min-height: 10rem;
+  background-color: lightgray;
+  margin-bottom: var(--margin-sm);
+}
+#gray .show {
+  display: block;
+}
+
+@media all and (min-width: 768px) {
+  #blue div {
+    min-height: 5rem;
+  }
+  #gray {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--margin-sm);
+  }
+  #gray div {
+    display: block;
+    flex-grow: 1;
+    width: 48%;
+    margin-bottom: 0;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  #orange {
+    display: flex;
+    gap: var(--margin-sm);
+  }
+  #orange div {
+    width: 100%;
+  }
+
+  #blue {
+    display: flex;
+    gap: var(--margin-sm);
+  }
+  #blue div {
+    min-height: 10rem;
+    width: 100%;
+  }
+}
