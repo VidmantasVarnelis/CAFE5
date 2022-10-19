@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* .btn {
+  background-color: royalblue;
+  color: white;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.btn--small {
+  padding: 0.5rem;
+  background-color: coral;
+}
+
+button {
+  color: black;
+  background-color: black;
+} */
+
+/* ----------------------------------------------- */
+
+.card {
+  margin: 2rem;
+  padding: 1rem;
+  max-width: 20rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 0.5rem;
+}
+
+.card__image {
+  max-width: 100%;
+}
+
+.card__content {
+  padding: 1rem;
+}
+
+.card__heading {
+  margin-bottom: 0.5rem;
+}
+
+.card__desc {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.card__btn {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border: none;
+  background-color: teal;
+  color: white;
+}

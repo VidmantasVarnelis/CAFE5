@@ -1,0 +1,18 @@
+:root {
+  --background: #ecf2f7;
+  --purple: #743fc1;
+  --gray: #f8fbfa;
+  --white: white;
+  --dark-blue: #111924;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}

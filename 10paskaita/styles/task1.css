@@ -11,6 +11,7 @@
 body {
   padding: 0 0.5rem;
 }
+
 #orange div {
   min-height: 4rem;
   background-color: coral;
@@ -35,6 +36,7 @@ body {
   background-color: lightgray;
   margin-bottom: var(--margin-sm);
 }
+
 #gray .show {
   display: block;
 }
