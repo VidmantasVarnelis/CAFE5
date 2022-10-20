@@ -7,7 +7,7 @@
   --dark-blue: hsl(219, 29%, 14%);
   --gray: hsl(0, 0%, 81%);
   --gray-blue: hsl(210, 46%, 95%);
-
+  --dark-gray: rgb(148, 148, 148);
   /* font weights */
 
   --fw-500: 500;
@@ -18,6 +18,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
 .cards {
@@ -33,19 +34,50 @@
   max-width: 80rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  margin: 0 auto;
   padding: 0 2rem;
   gap: 2rem;
 }
 
 .cards__article {
   border-radius: 0.5rem;
-  padding: 1rem 2rem;
+  padding: 1rem 2rem 2rem;
 }
 
-.cards__arctile-container {
+.cards__header-container {
   display: flex;
   gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.cards__header-name {
+  font-size: 0.875rem;
+  color: var(--dark-blue);
+  font-weight: var(--fw-600);
+}
+
+.cards__header-desc {
+  font-size: 0.75rem;
+  color: var(--dark-gray);
+}
+
+.cards__paragraph {
+  color: var(--dark-blue);
+  margin-bottom: 1rem;
+  font-weight: var(--fw-500);
+  text-align: left;
+}
+
+.cards_text-overflow {
+  max-height: 20rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cards__quote {
+  color: var(--dark-gray);
+  font-weight: var(--fw-500);
+  font-size: 0.875rem;
+  text-align: left;
 }
 
 .cards__image {
@@ -63,6 +95,9 @@
 .cards__article--violet {
   grid-column: span 2;
   background-color: var(--violet);
+  background-image: url('../tasks/images/bg-pattern-quotation.svg');
+  background-repeat: no-repeat;
+  background-position: 80% 0;
 }
 
 .cards__article--blue {
@@ -81,4 +116,49 @@
 .cards__article--dark-blue {
   grid-column: span 2;
   background-color: var(--dark-blue);
+}
+
+.cards__text--white {
+  color: var(--white);
+}
+
+/* ============================================================ */
+/* Media Queries */
+/* ============================================================ */
+
+@media all and (max-width: 1440px) {
+  .cards__article--violet {
+    grid-column: span 3;
+  }
+  .cards__article--dark-blue {
+    grid-column: span 3;
+  }
+  .cards__article--white {
+    grid-row: 3;
+    grid-column: 1/-1;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .cards__article--violet {
+    grid-column: span 2;
+  }
+  .cards__article--blue {
+    grid-column: span 2;
+  }
+  .cards__article--second-white {
+    grid-column: span 2;
+  }
+  .cards__article--dark-blue {
+    grid-column: span 2;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .cards__container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .cards__article--white {
+    grid-column: span 2;
+  }
 }
