@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:ital,opsz,wght@0,9..144,900;1,9..144,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Fraunces', serif;
+}
+
+p,
+a {
+  font-family: 'Barlow', sans-serif;
+}
+
+// ===================
+// Showcase
+// ===================
+.showcase {
+  background-image: url('../../images/desktop/image-header.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 40rem;
+  // ===================
+  // NAVIGATION
+  // ===================
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+  }
+  &__list {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    &-link {
+      color: white;
+      text-decoration: none;
+      padding: 0.75rem 2rem;
+      border-radius: 20rem;
+      &:hover {
+        background-color: lightgray;
+      }
+    }
+  }
+  // ===================
+  // Content
+  // ===================
+  &__heading {
+    font-size: 3rem;
+    margin-top: 4rem;
+    text-align: center;
+    color: white;
+  }
+  &__arrow {
+    display: flex;
+    justify-content: center;
+    margin-top: 7rem;
+    &-icon {
+      height: 6rem;
+    }
+  }
+}
+
+// ====================
+// TILES SECTION
+// ====================
+.tiles {
+  &__wrapper {
+    display: flex;
+    min-height: 20rem;
+    &-content {
+      flex: 0.5;
+    }
+    &-image {
+      flex: 0.5;
+      width: 100%;
+      // height: auto;
+      object-fit: cover;
+    }
+  }
+}

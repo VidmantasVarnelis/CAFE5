@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:ital,opsz,wght@0,9..144,900;1,9..144,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fraunces", serif;
+}
+
+p,
+a {
+  font-family: "Barlow", sans-serif;
+}
+
+.showcase {
+  background-image: url("../../images/desktop/image-header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 40rem;
+}
+.showcase__nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+.showcase__list {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+.showcase__list-link {
+  color: white;
+  text-decoration: none;
+  padding: 0.75rem 2rem;
+  border-radius: 20rem;
+}
+.showcase__list-link:hover {
+  background-color: lightgray;
+}
+.showcase__heading {
+  font-size: 3rem;
+  margin-top: 4rem;
+  text-align: center;
+  color: white;
+}
+.showcase__arrow {
+  display: flex;
+  justify-content: center;
+  margin-top: 7rem;
+}
+.showcase__arrow-icon {
+  height: 6rem;
+}
+
+.tiles__wrapper {
+  display: flex;
+  min-height: 20rem;
+}
+.tiles__wrapper-content {
+  flex: 0.5;
+}
+.tiles__wrapper-image {
+  flex: 0.5;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=task1.css.map */
