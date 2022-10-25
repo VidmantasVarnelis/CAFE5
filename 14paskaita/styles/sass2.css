@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.card {
+  max-width: 25rem;
+  margin: 4rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.card img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 15rem;
+}
+.card .card__content {
+  padding: 2rem;
+}
+.card .card__content h1 {
+  margin-bottom: 1rem;
+}
+.card .card__content h1:hover {
+  background-color: red;
+}
+.card .card__content p {
+  margin-bottom: 2rem;
+}
+.card .card__content button {
+  padding: 0.5rem 2rem;
+  background-color: teal;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  width: 100%;
+}
+.card .card__content button:hover {
+  background-color: aquamarine;
+}/*# sourceMappingURL=sass2.css.map */

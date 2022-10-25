@@ -28,12 +28,16 @@
   border-radius: 0.5rem;
   overflow: hidden;
   background-color: var(--white);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
-.card__image {
-  width: 100%;
-  object-fit: cover;
-  object-position: center;
+.card__background {
+  /* width: 100%; */
+  background-image: url('../images/drawers.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   height: 15rem;
   /* border-radius: 0.5rem 0.5rem 0 0; */
 }
@@ -128,16 +132,16 @@
 @media (min-width: 768px) {
   .card {
     display: flex;
-    max-width: 90rem;
+    max-width: 64rem;
   }
-  .card__image {
-    /* flex: 0.4; */
-    width: 40%;
-    height: 20rem;
+  .card__background {
+    /* width: 40% */
+    flex: 0.3;
+    height: auto;
   }
   .card__content {
-    /* flex: 0.6; */
-    width: 60%;
+    flex: 0.7;
+    /* width: 60%; */
   }
 }
 
@@ -148,15 +152,19 @@
 .card__credentials--active {
   background-color: var(--dark-gray);
 }
+
 .card__credentials--active .card__credentials-container {
   display: none;
 }
+
 .card__credentials--active .card__credentials-icon {
   background-color: var(--dark-blue);
 }
+
 .card__credentials--active .card__credentials-icon i {
   color: var(--white);
 }
+
 .card__credentials--active .card__credentials-social {
   display: flex;
 }
