@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:ital,opsz,wght@0,9..144,900;1,9..144,700&display=swap');
 
+$primary-soft-red: hsl(7, 99%, 70%);
+$primary-yellow: hsl(51, 100%, 49%);
+$primary-dark-cyan: hsl(167, 40%, 24%);
+$primary-dark-blue: hsl(198, 62%, 26%);
+$primary-dark-moderate-cyan: hsl(168, 34%, 41%);
+$neutral-dark-blue: hsl(212, 27%, 19%);
+$neutral-dark-gray-blue: hsl(213, 9%, 39%);
+$neutral-gray-blue: hsl(210, 4%, 67%);
+$neutral-white: hsl(0, 0%, 100%);
+
 * {
   margin: 0;
   padding: 0;
@@ -12,6 +22,14 @@ a {
   font-family: 'Barlow', sans-serif;
 }
 
+p {
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
 // ===================
 // Showcase
 // ===================
@@ -68,15 +86,187 @@ a {
 .tiles {
   &__wrapper {
     display: flex;
-    min-height: 20rem;
+    min-height: 30rem;
     &-content {
-      flex: 0.5;
+      // flex-grow -> 0.5, flex-shrink: 1, flex-basis: 0
+      // flex: 0.5;
+      padding: 7rem 10vw 5rem;
+      flex-grow: 0.5;
+      flex-basis: 50%;
+      &-h1 {
+        color: $neutral-dark-blue;
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+      }
+      &-p {
+        color: $neutral-dark-gray-blue;
+        margin-bottom: 2rem;
+      }
+      &-btn {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        font-size: 1rem;
+      }
     }
     &-image {
-      flex: 0.5;
-      width: 100%;
-      // height: auto;
-      object-fit: cover;
+      // flex: 0.5;
+      flex-grow: 0.5;
+      flex-basis: 50%;
+
+      background-image: url('../../images/desktop/image-transform.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 2rem;
+      &--egg {
+        background-image: url('../../images/desktop/image-transform.jpg');
+      }
+      &--cup {
+        background-image: url('../../images/desktop/image-stand-out.jpg');
+      }
+      &--cherry {
+        background-position: top;
+        background-image: url('../../images/desktop/image-graphic-design.jpg');
+      }
+      &--orange {
+        background-position: top;
+        background-image: url('../../images/desktop/image-photography.jpg');
+      }
+
+      &-h1 {
+        color: $primary-dark-blue;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+      }
+      &-p {
+        color: $primary-dark-blue;
+        max-width: 20rem;
+        text-align: center;
+      }
+    }
+  }
+}
+
+// ====================
+// Testimonials SECTION
+// ====================
+.testimonials {
+  padding: 10rem 2rem;
+  &__heading {
+    text-align: center;
+    letter-spacing: 0.25rem;
+    color: $neutral-gray-blue;
+    margin-bottom: 5rem;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+
+    > div {
+      max-width: 20rem;
+    }
+
+    &-img {
+      border-radius: 50%;
+      height: 5rem;
+      width: 5rem;
+      margin-bottom: 3rem;
+    }
+
+    &-desc {
+      margin-bottom: 3rem;
+      color: $neutral-dark-gray-blue;
+    }
+
+    &-name {
+      font-family: 'Fraunces', serif;
+      color: $neutral-dark-blue;
+    }
+    &-role {
+      color: $neutral-dark-blue;
+    }
+  }
+}
+// ====================
+// Gallery SECTION
+// ====================
+
+.gallery {
+  display: grid;
+  // grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  img {
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+  }
+}
+
+// ====================
+// Footer SECTION
+// ====================
+
+.footer {
+  padding: 3rem 2rem;
+  background-color: $primary-dark-moderate-cyan;
+  text-align: center;
+  &__logo {
+    margin-bottom: 2rem;
+  }
+  &__list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    &-link {
+      color: $primary-dark-cyan;
+      text-decoration: none;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .showcase {
+    &__list {
+      display: none;
+    }
+  }
+  .tiles {
+    &__wrapper {
+      flex-direction: column;
+      min-height: 50rem;
+      text-align: center;
+      &-content {
+        padding: 7rem 4rem 5rem;
+      }
+      &-image {
+        height: 20rem;
+        flex-basis: auto;
+        &--egg {
+          order: -1;
+        }
+      }
+    }
+  }
+  .testimonials {
+    &__wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+    img {
+      height: auto;
     }
   }
 }

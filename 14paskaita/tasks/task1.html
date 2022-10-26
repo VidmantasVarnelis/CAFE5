@@ -9,57 +9,180 @@
   </head>
   <body>
     <section class="showcase">
-      <header>
-        <nav class="showcase__nav">
+      <div class="container">
+        <header>
+          <nav class="showcase__nav">
+            <img
+              class="showcase__nav-logo"
+              src="../images/logo.svg"
+              alt="Logo image"
+            />
+            <ul class="showcase__list">
+              <li>
+                <a class="showcase__list-link" href="#">About</a>
+              </li>
+              <li>
+                <a class="showcase__list-link" href="#">Services</a>
+              </li>
+              <li>
+                <a class="showcase__list-link" href="#">Projects</a>
+              </li>
+              <li>
+                <a class="showcase__list-link" href="#">CONTACT</a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+        <h1 class="showcase__heading">WE ARE CREATIVES</h1>
+        <div class="showcase__arrow">
           <img
-            class="showcase__nav-logo"
-            src="../images/logo.svg"
-            alt="Logo image"
+            class="showcase__arrow-icon"
+            src="../images/icon-arrow-down.svg"
+            alt="Arrow down"
           />
-          <ul class="showcase__list">
-            <li>
-              <a class="showcase__list-link" href="#">About</a>
-            </li>
-            <li>
-              <a class="showcase__list-link" href="#">Services</a>
-            </li>
-            <li>
-              <a class="showcase__list-link" href="#">Projects</a>
-            </li>
-            <li>
-              <a class="showcase__list-link" href="#">CONTACT</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-      <h1 class="showcase__heading">WE ARE CREATIVES</h1>
-      <div class="showcase__arrow">
-        <img
-          class="showcase__arrow-icon"
-          src="../images/icon-arrow-down.svg"
-          alt="Arrow down"
-        />
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <section class="tiles">
+        <article class="tiles__wrapper">
+          <div class="tiles__wrapper-content">
+            <h1 class="tiles__wrapper-content-h1">Transform your brand</h1>
+            <p class="tiles__wrapper-content-p">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+              quis quod libero hic. Qui cumque laudantium adipisci id. Omnis
+              aspernatur enim molestias. Expedita sit nulla, reprehenderit nam
+              sint magnam quidem?
+            </p>
+            <button class="tiles__wrapper-content-btn">LEARN MORE</button>
+          </div>
+          <div
+            role="img"
+            class="tiles__wrapper-image tiles__wrapper-image--egg"
+          ></div>
+        </article>
+        <article class="tiles__wrapper">
+          <div
+            role="img"
+            class="tiles__wrapper-image tiles__wrapper-image--cup"
+          ></div>
+          <div class="tiles__wrapper-content">
+            <h1 class="tiles__wrapper-content-h1">
+              Stand out to the right audience
+            </h1>
+            <p class="tiles__wrapper-content-p">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+              quis quod libero hic. Qui cumque laudantium adipisci id. Omnis
+              aspernatur enim molestias. Expedita sit nulla, reprehenderit nam
+              sint magnam quidem?
+            </p>
+            <button class="tiles__wrapper-content-btn">LEARN MORE</button>
+          </div>
+        </article>
+        <article class="tiles__wrapper">
+          <div
+            role="img"
+            class="tiles__wrapper-image tiles__wrapper-image--cherry"
+          >
+            <h1 class="tiles__wrapper-image-h1">Graphic Design</h1>
+            <p class="tiles__wrapper-image-p">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+              neque similique ullam, asperiores sunt molestias laborum non
+              corporis aspernatur facilis.
+            </p>
+          </div>
+          <div
+            role="img"
+            class="tiles__wrapper-image tiles__wrapper-image--orange"
+          >
+            <h1 class="tiles__wrapper-image-h1">Photography</h1>
+            <p class="tiles__wrapper-image-p">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+              neque similique ullam, asperiores sunt molestias laborum non
+              corporis aspernatur facilis.
+            </p>
+          </div>
+        </article>
+      </section>
+    </div>
+
+    <section class="testimonials" id="testimonials">
+      <h1 class="testimonials__heading">CLIENT TESTIMONIALS</h1>
+      <div class="testimonials__wrapper">
+        <div>
+          <img
+            class="testimonials__wrapper-img"
+            src="../images/image-emily.jpg"
+            alt="Emily Image"
+          />
+          <p class="testimonials__wrapper-desc">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem quos
+            omnis accusamus, aspernatur a in mollitia quasi quibusdam, similique
+            temporibus officiis eos cupiditate facere est. Exercitationem non
+            fugit omnis odit.
+          </p>
+          <p class="testimonials__wrapper-name">Emily R.</p>
+          <p class="testimonials__wrapper-role">Marketing Director</p>
+        </div>
+        <div>
+          <img
+            class="testimonials__wrapper-img"
+            src="../images/image-thomas.jpg"
+            alt="Emily Image"
+          />
+          <p class="testimonials__wrapper-desc">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem quos
+            omnis accusamus, aspernatur a in mollitia quasi quibusdam, similique
+            temporibus officiis eos cupiditate facere est. Exercitationem non
+            fugit omnis odit.
+          </p>
+          <p class="testimonials__wrapper-name">Thomas S.</p>
+          <p class="testimonials__wrapper-role">Marketing Director</p>
+        </div>
+        <div>
+          <img
+            class="testimonials__wrapper-img"
+            src="../images/image-jennie.jpg"
+            alt="Emily Image"
+          />
+          <p class="testimonials__wrapper-desc">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem quos
+            omnis accusamus, aspernatur a in mollitia quasi quibusdam, similique
+            temporibus officiis eos cupiditate facere est. Exercitationem non
+            fugit omnis odit.
+          </p>
+          <p class="testimonials__wrapper-name">Jennie F.</p>
+          <p class="testimonials__wrapper-role">Marketing Director</p>
+        </div>
       </div>
     </section>
 
-    <section class="tiles">
-      <article class="tiles__wrapper">
-        <div class="tiles__wrapper-content">
-          <h1>Transform your brand</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
-            voluptatem, nesciunt minus possimus incidunt commodi doloribus qui
-            libero illo officiis eligendi nobis asperiores eveniet minima
-            ratione architecto quae totam laudantium.
-          </p>
-          <button>LEARN MORE</button>
-        </div>
-        <img
-          class="tiles__wrapper-image"
-          src="../images/desktop/image-transform.jpg"
-          alt="Egg Image"
-        />
-      </article>
+    <section class="gallery">
+      <img
+        src="../images/desktop/image-gallery-milkbottles.jpg"
+        alt="Milk img"
+      />
+      <img src="../images/desktop/image-gallery-orange.jpg" alt="Orange img" />
+      <img src="../images/desktop/image-gallery-cone.jpg" alt="Cone img" />
+      <img
+        src="../images/desktop/image-gallery-sugarcubes.jpg"
+        alt="Sugarcubes img"
+      />
     </section>
+
+    <footer class="footer">
+      <img class="footer__logo" src="../images/logo.svg" alt="Logo image" />
+      <ul class="footer__list">
+        <li>
+          <a class="footer__list-link" href="#">About</a>
+        </li>
+        <li>
+          <a class="footer__list-link" href="#">Services</a>
+        </li>
+        <li>
+          <a class="footer__list-link" href="#">Projects</a>
+        </li>
+      </ul>
+    </footer>
   </body>
 </html>
