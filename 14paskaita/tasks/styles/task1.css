@@ -15,6 +15,10 @@ p {
   line-height: 1.5;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   max-width: 1440px;
   margin: 0 auto;
@@ -44,7 +48,7 @@ p {
   border-radius: 20rem;
 }
 .showcase__list-link:hover {
-  background-color: lightgray;
+  background-color: #55c5fd;
 }
 .showcase__heading {
   font-size: 3rem;
@@ -84,6 +88,19 @@ p {
   border: none;
   cursor: pointer;
   font-size: 1rem;
+  position: relative;
+}
+.tiles__wrapper-content-btn::before {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 0.5rem;
+  width: 115%;
+  border-radius: 20rem;
+  transform: translateX(-7.5%);
+  background-color: hsl(51deg, 100%, 49%);
+  bottom: 0;
+  z-index: -1;
 }
 .tiles__wrapper-image {
   flex-grow: 0.5;

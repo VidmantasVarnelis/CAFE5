@@ -26,6 +26,10 @@ p {
   line-height: 1.5;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   max-width: 1440px;
   margin: 0 auto;
@@ -57,7 +61,7 @@ p {
       padding: 0.75rem 2rem;
       border-radius: 20rem;
       &:hover {
-        background-color: lightgray;
+        background-color: #55c5fd;
       }
     }
   }
@@ -107,6 +111,19 @@ p {
         border: none;
         cursor: pointer;
         font-size: 1rem;
+        position: relative;
+        &::before {
+          content: '';
+          position: absolute;
+          display: block;
+          height: 0.5rem;
+          width: 115%;
+          border-radius: 20rem;
+          transform: translateX(-7.5%);
+          background-color: $primary-yellow;
+          bottom: 0;
+          z-index: -1;
+        }
       }
     }
     &-image {
